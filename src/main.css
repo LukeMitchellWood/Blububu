@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: goodfood;
+  src: url('/static/fonts/good-food.ttf');
+}
+
+.goodfood {
+  font-family: goodfood;
+}
+
+.bouncy {
+  animation: bounce 1000ms ease-in-out 0ms infinite alternate both;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+
+.sticker {
+  filter: url(#sticker);
+}
