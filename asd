@@ -1,0 +1,1 @@
+vlc -I dummy -vvv "/Users/bleedingoxide/Documents/Development/AliWebsite/static/img/assets/ducks-and-frog-loop-animation.mp4" --sout=#transcode{vcodec=h264,vb=512,acodec=mp4a,ab=192,channels=2,deinterlace}:standard{access=file,mux=ts,dst=/Users/bleedingoxide/Documents/Development/AliWebsite/static/img/assets/duckloop.mp4}

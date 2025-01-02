@@ -2,22 +2,22 @@ import type { FC } from 'hono/jsx';
 
 export const LandingPage: FC = () => {
   return (
-    <section className="relative top-0 left-0 min-h-dvh z-0 mt-[-93px]">
+    <section className="min-h-dvh isolate flex flex-col justify-center items-center md:relative">
       <video
-        className="absolute top-0 left-0 min-w-full min-h-full object-cover brightness-75"
-        autoplay
-        mute
+        className="absolute top-0 left-0 max-w-full h-dvh object-cover brightness-75 z-0"
         loop
-        playsinline
-        src="/static/img/assets/ducks-and-frog-loop-animation.mp4"
-      ></video>
+        autoplay
+        muted
+      >
+        <source src="/static/video/ducksloop.mp4" type="video/mp4" />
+      </video>
       <img
-        className="min-h-full absolute top-0 left-0 object-contain"
-        src="/static/img/assets/text_orig.png"
+        className="relative top-0 left-0 w-[80%] md:w-[50%] translate-y-[-50%] md:translate-y-0"
+        src="/static/img/assets/ui/ui_logo.png"
         alt=""
       />
-      <div className="text-white text-opacity-80 text-2xl absolute left-1/2 bottom-8 translate-x-[-50%] flex flex-col justify-center items-center bouncy">
-        <p>See More</p>
+      <div className="hidden md:absolute bottom-8 left-[50%] md:flex flex-col justify-center items-center bg-white bg-opacity-80 text-black text-opacity-80 p-4 rounded-2xl shadow-xl bouncy">
+        <p className="text-sm">See My Work!</p>
         <span class="material-symbols-outlined">keyboard_arrow_down</span>
       </div>
     </section>

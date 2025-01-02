@@ -1,6 +1,8 @@
 node_modules
 .env
+**/.DS_Store
 static/**/*.svg
+static/**/*.jpeg
 static/**/*.png
 static/**/*.ttf
 static/**/*.mp4
